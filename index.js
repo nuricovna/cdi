@@ -1,10 +1,22 @@
-document.querySelector(".nav_submenu").addEventListener("click", function(event) {
-    event.preventDefault();
-    // console.log(123)
-    // this.classList.add('test');
-    
-    let submenu = document.querySelector(".nav__sub");
-    submenu.classList.toggle('open-sub');
-})
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 
 

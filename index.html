@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body class="body">
     <p><a name="top"></a></p> 
@@ -97,18 +98,17 @@
         
         <h1 class="section_title">СОБСТВЕННЫЕ РАЗРАБОТКИ</h1>
         <div class="product-list">
-            <a name="kron"></a>
-            <div class="product-info">
+            <div class="product-info" id="kron">
 			<div class="about_img">
 				<img src="./img/kron.jpg" alt=""/>
-			</div>
+			</div>  
 			<div class="about_txt">
 				<div class="h2">КРОН</div>
                 <p class="product_text">КРОН — контроль и разработка объектов нефтедобычи или Комплекс решения для объектов нефтедобычи. Сочетающее в себе преимущества MES- и частично ERP-систем. Как MES-система, ИС «КРОН» позволяет решать оперативные производственные задачи предприятия на уровне цеха (участка), добывающих и сервисных предприятий, а также на уровне управляющей компании.</p>
 			</div>
+            </div>
 
-            <a name="kron_tm"></a>
-            <div class="product-info">
+            <div class="product-info" id="kron_tm">
                 <div class="about_img">
                     <img src="./img/kron-tm.jpg" alt=""/>
                 </div>
@@ -116,6 +116,7 @@
                     <div class="h2">КРОН-ТМ</div>
                     <p class="product_text">ИС КРОН-ТМ это информационная система «Контроль и Разработка Объектов Нефтедобычи — Телемеханика», разработанная командой программистов ООО «СиДиАй» и предназначенная для работы в реальном времени с целью сбора, обработки, отображения и архивирования информации об объектах мониторинга или управления.</p>
                 </div>
+            </div>
             
                 <a name="evise"></a>
                 <div class="product-info">
@@ -128,7 +129,7 @@
                             При электронном согласовании Вашим сотрудникам более не придётся рассылать документы по электронной почте, стоять в очередях к руководству и вручную собирать подписи.
                             Вы сможете повысить эффективность договорной работы – ускорить согласование, сбор и устранение замечаний, снизить риск случайных ошибок.</p>   
                 </div>    
-        </div>
+            </div>
     </section>
 
     <section class="center">
@@ -184,7 +185,28 @@
                 <p class="ftr_icon">© 2023 CDI</p> 
         </div>
     </footer>
-    <script src="./index.js"></script>
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./index.js"></script>
 </body>
 
 

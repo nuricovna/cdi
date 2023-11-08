@@ -264,14 +264,13 @@
         gap: 35px;
       }
     
-      /* line 469, ../sass/screen.scss */
       .header_menu > li {
         display: table-cell;
         vertical-align: middle;
         position: relative;
       }
       
-      /* line 475, ../sass/screen.scss */
+
       .menu_lvl1_bt {
         display: table;
         width: 100%;
@@ -283,21 +282,21 @@
         font-size: 18px;
         font-weight: 700;
       }
-      /* line 485, ../sass/screen.scss */
+
       .menu_lvl1_bt.active, .menu_lvl1_bt:hover {
         background: #1e86b3;
       }
-      /* line 489, ../sass/screen.scss */
+
       .menu_lvl1_bt > span {
         display: table-cell;
         vertical-align: middle;
         position: relative;
       }
-      /* line 494, ../sass/screen.scss */
+
       .menu_lvl1_bt.arrow > span {
         padding-right: 20px;
       }
-      /* line 496, ../sass/screen.scss */
+
       .menu_lvl1_bt.arrow > span:before {
         content: '';
         position: absolute;
@@ -310,7 +309,7 @@
         margin-top: -2px;
       }
       
-      /* line 509, ../sass/screen.scss */
+
       .menu_lvl2 {
         display: none;
         position: absolute;
@@ -323,7 +322,7 @@
         z-index: 100;
       }
       
-      /* line 520, ../sass/screen.scss */
+
       .menu_lvl2_bt {
         color: #000;
         text-decoration: none;
@@ -332,12 +331,12 @@
         position: relative;
         display: block;
       }
-      /* line 527, ../sass/screen.scss */
+  
       .menu_lvl2_bt.active, .menu_lvl2_bt:hover {
         background: #e5f7ff;
         color: #1e86b3;
       }
-      /* line 533, ../sass/screen.scss */
+
       .menu_lvl2_bt.arrow:before {
         content: '';
         display: block;
@@ -349,12 +348,12 @@
         right: 10px;
         background: url("../img/menu_arrow_sprite.png") left top no-repeat;
       }
-      /* line 544, ../sass/screen.scss */
+
       .menu_lvl2_bt.arrow.active:before, .menu_lvl2_bt.arrow:hover:before {
         background-position: left bottom;
       }
       
-      /* line 550, ../sass/screen.scss */
+
       .menu_lvl3 {
         display: none;
         position: absolute;
@@ -365,7 +364,7 @@
         width: 270px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
       }
-      /* line 559, ../sass/screen.scss */
+
       .menu_lvl3 a {
         display: block;
         color: #000;
@@ -374,30 +373,30 @@
         font-size: 16px;
         padding: 8px 0;
       }
-      /* line 566, ../sass/screen.scss */
+
       .menu_lvl3 a.active, .menu_lvl3 a:hover {
         color: #1e86b3;
       }
       
-      /* line 573, ../sass/screen.scss */
+
       .header_menu > li:hover .menu_lvl1_bt {
         background: #1e86b3;
       }
-      /* line 576, ../sass/screen.scss */
+
       .header_menu > li:hover .menu_lvl2 {
         display: block;
       }
       
-      /* line 581, ../sass/screen.scss */
+
       .menu_lvl2 > li:hover .menu_lvl2_bt {
         background: #e5f7ff;
         color: #1e86b3;
       }
-      /* line 584, ../sass/screen.scss */
+
       .menu_lvl2 > li:hover .menu_lvl2_bt.arrow:before {
         background-position: left bottom;
       }
-      /* line 588, ../sass/screen.scss */
+
       .menu_lvl2 > li:hover .menu_lvl3 {
         display: block;
       }
@@ -409,24 +408,77 @@
 
 
 .swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-      
-
-
-
-
-
-
-.kron_head {
-    background: url(img/Frame\ 46_1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 680px;
+    width: 50%px;
+    height: 50%px;
 }
+
+
+.swiper-button-prev {
+    color: #ffffff !important; 
+    opacity: initial;
+}
+    
+
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+  }
+  
+  .slide{
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #eeedcd;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+    overflow: hidden;
+  }
+  
+  .slide img {
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.3s;
+  }
+  
+  .slide:hover img {
+    transform: scale(1.2); 
+  }
+  
+  .slide h3{
+    position: absolute;
+    font-size: 50px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  .slide.active{
+    flex: 10;
+  }
+  
+  .slide.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+  
+  
+
+/* slider */
+
+
+
+
+
 
 
     

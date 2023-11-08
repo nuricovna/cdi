@@ -10,16 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="img/icon.png">
 </head>
 <body class="body">
     <p><a name="top"></a></p> 
-    <header class="header center ">
+     <header class="header center ">
         <div class="hat-wrapper">
-        <a class="top_head_logo" href="footer"><img src="img/logo.png" alt="logo"></a>
-        <ul class="header_menu">
+        <a class="top_head_logo" href="#contacts"><img src="img/logo.png" alt="logo"></a>
+    <ul class="header_menu">
                     <li>
                     <a class="menu_lvl1_bt" href="#about"><span>О КОМПАНИИ</span></a></li>
-                    <li><a class="menu_lvl1_bt arrow" href=""><span>РЕШЕНИЯ</span></a>
+                    <li><a class="menu_lvl1_bt arrow" href="#solutions"><span>РЕШЕНИЯ</span></a>
                     <ul class="menu_lvl2">
                         <li>
                             <a class="menu_lvl2_bt arrow" href="#kron">КРОН</a>
@@ -38,12 +39,50 @@
                         </li>
                     </li></ul>
 					<li><a class="menu_lvl1_bt" href="#contacts"><span>КОНТАКТЫ</span></a></li>
-            <!-- <li class="nav"><a href="index.html">О КОМПАНИИ</a></li>
-            <li class="nav"><a href="solutions.html">РЕШЕНИЯ</a></li>
-            <li class="nav"><a href="about.html">КОНТАКТ</a></li> -->
-        </ul>
-<a class="header__btn" href="mailto:spv@shoil.tatais.ru"></a>
-    </div>
+                </ul>
+            <a class="header__btn" href="mailto:spv@shoil.tatais.ru"></a>
+        </div>
+        <!-- <div class="container center">
+            <div
+                class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1573496546735-c274b1fd186b?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
+            >
+              <h3>EVISE</h3>
+            </div>
+            <div
+                class="slide"
+                style="
+                    background-image: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                  "
+            >
+              <h3>KRON</h3>
+            </div>
+            <div
+                class="slide active"
+                style="
+                    background-image: url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1955&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                  "
+            >
+              <h3>KRON-TM</h3>
+            </div>
+            <div
+                class="slide"
+                style="
+                    background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2015&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                  "
+            >
+              <h3>PARUS</h3>
+            </div>
+            <div
+                class="slide"
+                style="
+                    background-image: url('https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                  "
+            >
+              <h3>1C</h3>
+            </div>
+          </div> -->
+    
     <div>
         <h1 class="title">Наши ключевые решения - Ваше преимущество </h1>
         <p class="about">Строгая ролевая политика позволяет нам оставаться ответственными за качество и прогрессивность наших систем на современном рынке технологий</p>
@@ -51,9 +90,8 @@
     </header>
     
     <div class="content">
-	    <a name="about"></a>
-    <section class="about_company center">
-        <h1 class="section_title">НЕМНОГО О НАС</h1>
+    <section class="about_company center" id="about">
+        <h2 class="section_title">НЕМНОГО О НАС</h2>
         <div>
             <p class="product_text">ООО «СиДиАй» является одной из ведущих компаний Юго-Востока Республики Татарстан, оказывающих услуги по комплексной автоматизации предприятий нефтедобывающей отрасли, предприятий малого и среднего бизнеса. <br>Коллектив, сформировавшийся за годы работы, является важнейшим капиталом компании. Опыт, знания и энергия наших специалистов — вот залог успеха решения поставленных перед нами задач в кратчайшие сроки и с максимальной отдачей для вашего бизнеса.</p>
             <div class="company_info">
@@ -74,85 +112,147 @@
                 </p>
             </div>
             </div>
-            <!-- <details>
-                <summary class="product_text">Надежность систем</summary>
-                <ul>
-                    <li>Программный комплекс построен на СУБД, сервисов обработки данных, web и мобильных технологиях.</li>
-                    <li>В составе надежные средства для резервного копирования и восстановления информации.</li>
-                    <li>Архитектура системы исключает возможность появления противоречивой информации в базе данных. Физическое хранилище «спрятано» от пользователей за слоем бизнес-логики.</li>
-            </details>
-            <details open>
-                <summary class="product_text">Безопасность</summary>
-                <ul>
-                    <li>Строгая ролевая политика позволяет определить специалистов, ответственных за качество и достоверность подотчетной им информации.</li>
-                    <li>Средства мониторинга и аудита вводимой информации позволяют отследить изменения, сделанные пользователями и, в случае спорного вопроса, найти ответственного за качество данных.</li>
-                    <li>Возможность кластеризации серверов существенно повышает вероятность безотказной работы информационной системы в случае выхода из строя одного из узлов.</li>
-                    <li>Ежедневное снятие резервных копий гарантирует сохранность информации в случае форс-мажорных ситуаций.</li>
-                </ul>
-            </details> -->
         </div>
     </section>
 
+    
 
-    <section class="center">
-        
-        <h1 class="section_title">СОБСТВЕННЫЕ РАЗРАБОТКИ</h1>
+    <section class="center" id="solutions">
+        <p class="section_title">СОБСТВЕННЫЕ РАЗРАБОТКИ</p>
         <div class="product-list">
-            <div class="product-info" id="kron">
-			<div class="about_img">
-				<img src="./img/kron.jpg" alt=""/>
-			</div>  
-			<div class="about_txt">
-				<div class="h2">КРОН</div>
-                <p class="product_text">КРОН — контроль и разработка объектов нефтедобычи или Комплекс решения для объектов нефтедобычи. Сочетающее в себе преимущества MES- и частично ERP-систем. Как MES-система, ИС «КРОН» позволяет решать оперативные производственные задачи предприятия на уровне цеха (участка), добывающих и сервисных предприятий, а также на уровне управляющей компании.</p>
-			</div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-info" id="kron">
+                            <div class="about_img">
+                                <img src="./img/kron.jpg" alt=""/>
+                            </div>  
+                            <div class="about_txt">
+                                <div class="h2">КРОН</div>
+                                <p class="product_text">КРОН — контроль и разработка объектов нефтедобычи или Комплекс решения для объектов нефтедобычи. Сочетающее в себе преимущества MES- и частично ERP-систем. Как MES-система, ИС «КРОН» позволяет решать оперативные производственные задачи предприятия на уровне цеха (участка), добывающих и сервисных предприятий, а также на уровне управляющей компании.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-info" id="kron">
+                        <div>
+                            <img src="./img/logo_tip.png" alt=""/>
+                        </div>  
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-info" id="kron">
+                            <div class="about_img">
+                                <img src="./img/kron.jpg" alt=""/>
+                            </div>  
+                            <div class="about_txt">
+                                <div class="h2">КРОН</div>
+                                <p class="product_text">КРОН — контроль и разработка объектов нефтедобычи или Комплекс решения для объектов нефтедобычи. Сочетающее в себе преимущества MES- и частично ERP-систем. Как MES-система, ИС «КРОН» позволяет решать оперативные производственные задачи предприятия на уровне цеха (участка), добывающих и сервисных предприятий, а также на уровне управляющей компании.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div> 
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-info" id="kron_tm">
+                        <div class="about_img">
+                            <img src="./img/kron-tm.jpg" alt=""/>
+                        </div>
+                        <div class="about_txt">
+                            <div class="h2">КРОН-ТМ</div>
+                            <p class="product_text">ИС КРОН-ТМ это информационная система «Контроль и Разработка Объектов Нефтедобычи — Телемеханика», разработанная командой программистов ООО «СиДиАй» и предназначенная для работы в реальном времени с целью сбора, обработки, отображения и архивирования информации об объектах мониторинга или управления.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"><img src="img/clients.png" alt=""></div>
+                  <div class="swiper-slide">Slide 3</div>
+                  ...
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
-            <div class="product-info" id="kron_tm">
-                <div class="about_img">
-                    <img src="./img/kron-tm.jpg" alt=""/>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-info"     id="evise">
+                        <div class="about_img">
+                                <img src="./img/demo.png" alt=""/>
+                        </div>
+                        <div class="about_txt">
+                            <div class="h2">EVISE</div>
+                            <p class="product_text">Система предлагает быстрый и надёжный механизм организации и проведения внутреннего согласования договоров
+                                    При электронном согласовании Вашим сотрудникам более не придётся рассылать документы по электронной почте, стоять в очередях к руководству и вручную собирать подписи.
+                                    Вы сможете повысить эффективность договорной работы – ускорить согласование, сбор и устранение замечаний, снизить риск случайных ошибок.</p> 
+                        </div>
+                    </div> 
+                  </div>
+                  <div class="swiper-slide"><img src="img/clients.png" alt=""></div>
+                  <div class="swiper-slide">Slide 3</div>
+                  ...
                 </div>
-                <div class="about_txt">
-                    <div class="h2">КРОН-ТМ</div>
-                    <p class="product_text">ИС КРОН-ТМ это информационная система «Контроль и Разработка Объектов Нефтедобычи — Телемеханика», разработанная командой программистов ООО «СиДиАй» и предназначенная для работы в реальном времени с целью сбора, обработки, отображения и архивирования информации об объектах мониторинга или управления.</p>
-                </div>
-            </div>
-            
-                <div class="product-info"     id="evise">
-                    <div class="about_img">
-                        <img src="./img/demo.png" alt=""/>
-                    </div>
-                    <div class="about_txt">
-                        <div class="h2">EVISE</div>
-                        <p class="product_text">Система предлагает быстрый и надёжный механизм организации и проведения внутреннего согласования договоров
-                            При электронном согласовании Вашим сотрудникам более не придётся рассылать документы по электронной почте, стоять в очередях к руководству и вручную собирать подписи.
-                            Вы сможете повысить эффективность договорной работы – ускорить согласование, сбор и устранение замечаний, снизить риск случайных ошибок.</p>   
-                </div>    
-            </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>   
+        </div>
     </section>
 
     <section class="center">
         <h1 class="section_title">ВНЕДРЕНИЕ И СОПРОВОЖДЕНИЕ</h1>
         <div class="product-list">
-            <a name="1c"></a>
-            <div class="product-info">
-                <div class="about_img">
-                    <img src="./img/1c.jpg" alt=""/>
-                </div>
-                <div class="about_txt">
-                    <div class="h2">1C</div>
-                    <p class="product_text">Система программ "1С:Предприятие" предназначена для решения широкого спектра задач автоматизации учета и управления, стоящих перед динамично развивающимися современными предприятиями.</p>
-                </div>
-                
-                <a name="parus"></a>
-                <div class="product-info">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="product-info" id="1c">
                     <div class="about_img">
-                        <img src="./img/parus.jpg" alt=""/>
+                        <img src="./img/1c.jpg" alt=""/>
                     </div>
                     <div class="about_txt">
-                        <div class="h2">ПАРУС</div>
-                        <p class="product_text">Основное функциональное назначение КИС «ПАРУС – Предприятие 8» это возможности по управлению финансовыми ресурсами, рисками и рентабельностью, в том числе с разветвленной системой центров финансового учета, и сложной структурой статей доходов и расходов, а также единую базу данных для получения информации об отклонениях в развитии кадровых процессов.</p>
+                        <div class="h2">1C</div>
+                        <p class="product_text">Система программ "1С:Предприятие" предназначена для решения широкого спектра задач автоматизации учета и управления, стоящих перед динамично развивающимися современными предприятиями.</p>
+                    </div>
                 </div>
+            </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="product-info" id="parus">
+                        <div class="about_img">
+                            <img src="./img/parus.jpg" alt=""/>
+                        </div>
+                        <div class="about_txt">
+                            <div class="h2">ПАРУС</div>
+                            <p class="product_text">Основное функциональное назначение КИС «ПАРУС – Предприятие 8» это возможности по управлению финансовыми ресурсами, рисками и рентабельностью, в том числе с разветвленной системой центров финансового учета, и сложной структурой статей доходов и расходов, а также единую базу данных для получения информации об отклонениях в развитии кадровых процессов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            </div>
         </div>
     </section>
 
@@ -163,7 +263,6 @@
                 <img class="for__item" src="img/sheshmaoil.png" alt="шешмаойл" class="icon_client">
                 <img class="for__item" src="img/tattex.png" alt="таттех" class="icon_client">
                 <img class="for__item" src="img/tatnefteprom.png" alt="татнефтепром" class="icon_client">
-
                 <img class="for__item for__item_big" src="img/karbon.png" alt="карбон" class="icon_client"> 
                 <img class="for__item for__item_big" src="img/mellyaneft.png" alt="меллянефть" class="icon_client_1">
                 <img class="for__itemfor__item_big " src="img/mnkt.png" alt=мнкт"" class="icon_client">
@@ -172,8 +271,7 @@
     </div>
 
     <footer class="footer center">
-	    <a name="contacts"></a>
-        <div class="">
+        <div class="" id="contacts">
                 <h1 class="section_title">КОНТАКТЫ</h1>
                 <div class="ftr_contacts">
                     <p>тел 8 (8553) 39-30-57</p>
@@ -185,29 +283,8 @@
         </div>
     </footer>
 
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
 </body>
-
-
 
 </html>

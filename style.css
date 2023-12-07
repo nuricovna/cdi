@@ -85,14 +85,16 @@ ul {
 }
 
 .product_img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
 }
 
 .product-info {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .product-text {
@@ -175,13 +177,6 @@ a:hover img {
   padding-bottom: 30px;
 }
 
-.product-info .h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  line-height: 1.2;
-  color: #000000;
-}
 
 .company_name {
   font-weight: 500;
@@ -373,17 +368,17 @@ span {
 
 .product_info {
   display: flex;
-  flex-direction: row-reverse;
-  height: 600px;
-  gap: 20px;
+  gap: 32px;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .about_title {
   font-size: 30px;
   font-weight: 500;
-  padding-top: 100px;
   line-height: 1.2;
 }
+
 
 .evise_info {
   display: flex;
@@ -455,7 +450,7 @@ span {
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  justify-content: space-evenly;
+  padding-left: 100px;
 }
 
 .section_Text {
@@ -471,6 +466,7 @@ span {
   bottom: -27px;
   margin: 0;
   flex: 1 0 50%;
+  padding-left: 120px;
 }
 
 .plot-live .section_Figure img {
@@ -621,6 +617,50 @@ details[open] > summary {
 
 .solutions_mob {
   display: none;
+}
+
+@media (max-width: 1320px) {
+
+  details > summary {
+    padding: 2px 6px;
+    width: 280px;
+    background-color: #337AB7;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(17, 17, 17, 0.418);
+    cursor: pointer;
+  }
+
+
+}
+
+
+@media (max-width: 1024px) {
+  .center {
+      padding-left: calc(50% - 393px);
+      padding-right: calc(50% - 393px);
+  }
+
+  details > summary {
+    padding: 2px 6px;
+    width: 280px;
+    background-color: #337AB7;
+    border: none;
+    box-shadow: 3px 3px 4px rgba(17, 17, 17, 0.418);
+    cursor: pointer;
+  }
+
+
+}
+
+@media (max-width: 833px) {
+  .center {
+      padding-left: calc(24px);
+      padding-right: calc(24px);
+  }
+
+  .product {
+      width: 345px;
+  }
 }
 
 
@@ -879,6 +919,7 @@ details[open] > summary {
 
   .partner {
     flex-direction: column;
+    gap: 0px;
   }
 
 

@@ -557,7 +557,7 @@ summary {
   background-color: #337AB7;
   color: rgb(255, 255, 255); /* Белый цвет текста */
   padding: 0.5em 1em; /* Расстояние от текста до края */
-  border-radius: 10px 10px 12px 21px;
+  border-radius: 10px 10px 10px 10px;
   text-align: center;
   padding: 20px;
   margin: 5px;
@@ -573,12 +573,12 @@ details[open] summary {
 }
 
 summary::marker {
-  content: "🔹 "; /* Исходный символ ➕ */
+  content: "➕ "; /* Исходный символ 🔹 */
 }
 
 details[open] summary::marker {
-  content: "🔷 "; /* Символ после открытия ➖*/
-}
+  content: "➖ "; /* Символ после открытия 🔷*/
+} 
 
 details div {
   padding: 1em; /* Расстояние от текста до края */
@@ -823,21 +823,14 @@ details[open] > summary {
   }
   
   summary[open] {
-    background-color: #337AB7;
+    background-color: rgb(2, 33, 77);
   }
   
   details[open] summary {
     background-color: #fff;
-    color: blue;
+    color:  rgb(2, 33, 77);
   }
   
-  summary::marker {
-    content: "🔹 "; /* Исходный символ ➕ */
-  }
-  
-  details[open] summary::marker {
-    content: "🔷 "; /* Символ после открытия ➖*/
-  }
   
   details div {
     padding: 1em; /* Расстояние от текста до края */
@@ -872,7 +865,21 @@ details[open] > summary {
     background-color: rgb(91, 91, 95), 0.253;
   }
   
+  .evise-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #010c19;
+    margin-bottom: 12px;
+  }
+
+  .podrobnee {
+    padding-left: 50px;
+  }
+
+  .partner {
+    flex-direction: column;
+  }
+
 
 }/*# sourceMappingURL=style.css.map */
-
-    

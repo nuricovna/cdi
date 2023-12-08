@@ -1,10 +1,20 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
+
+    autoHeight: true,
+
+    
+
+
+
+    // slidesPerView: 2,
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
     },
   
     // Navigation arrows
@@ -14,10 +24,10 @@ const swiper = new Swiper('.swiper', {
     },
   
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+});
 
 /* swiper */
 
@@ -37,4 +47,7 @@ function clearActiveClasses() {
     })
     
 }
+
+
+/* slider */
 

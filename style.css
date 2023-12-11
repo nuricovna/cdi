@@ -27,8 +27,7 @@ ul {
 }
 
 .hat_wrapper {
-  background: rgb(120, 140, 177);
-  background: linear-gradient(90deg, rgb(120, 140, 177) 0%, rgb(2, 33, 77) 47%, rgb(21, 22, 22) 100%);
+  background: rgb(19, 62, 99);
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -113,8 +112,7 @@ ul {
 
 
 .footer {
-  background: rgb(120, 140, 177);
-  background: linear-gradient(90deg, rgb(120, 140, 177) 0%, rgb(2, 33, 77) 47%, rgb(21, 22, 22) 100%);
+  background: rgb(19, 62, 99);
   color: #fff;
   line-height: 35px;
   font-size: 20px;
@@ -377,8 +375,7 @@ span {
   width: 100%;
   display: flex;
   padding: 0 20px;
-  background: rgb(120, 140, 177);
-  background: linear-gradient(90deg, rgb(120, 140, 177) 0%, rgb(2, 33, 77) 47%, rgb(21, 22, 22) 100%);
+  background: rgb(19, 62, 99);
 }
 
 .slide {
@@ -682,6 +679,10 @@ details[open] > summary {
 }
 
 .solutions_mob {
+  display: none;
+}
+
+.wave-divider { 
   display: none;
 }
 
@@ -1112,3 +1113,6 @@ details[open] > summary {
     
 
 }/*# sourceMappingURL=style.css.map */
+
+
+

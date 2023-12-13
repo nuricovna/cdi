@@ -52,6 +52,10 @@ ul {
   margin-top: 20px;
 }
 
+.company {
+  text-align: center;
+}
+
 .company_title {
   font-weight: 500;
   font-size: 48px;
@@ -60,7 +64,6 @@ ul {
   background-image: linear-gradient(90deg, rgb(25, 133, 201), #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
 }
 
 .company_about {
@@ -69,16 +72,12 @@ ul {
   font-weight: normal;
   line-height: normal;
   color: #010c19;
-  text-align: center;
 }
 
 .section_title {
-  margin-top: 50px;
   font-weight: 500;
   font-size: 36px;
   line-height: 59px;
-  text-align: left;
-  padding-top: 40px;
   background-image: linear-gradient(90deg, rgb(25, 133, 201), #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -107,6 +106,22 @@ ul {
   font-size: 16px;
   margin-bottom: 10px;
   font-weight: 500;
+}
+
+ /** MAP **/
+
+.map {
+  width: calc(100% + 42px);
+  height: 472px;
+  /* pointer-events: none; */
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+[class*="ground-pane"] {
+  /* filter: grayscale(1); */
 }
 
 
@@ -145,6 +160,11 @@ a:hover img {
 }
 
 .company_info {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.company_block {
   display: flex;
   gap: 32px;
 }
@@ -152,9 +172,8 @@ a:hover img {
 
 .swiper {
   display: flex;
-  width: 50% px;
-  height: 50% px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .swiper-wrapper {
@@ -171,21 +190,6 @@ a:hover img {
   height: 100%;
 }
 
-/* Кнопки вперед и назад */
-.swiper-button-prev{
-  background-color: #e5f7ff;
-  left: 20px;
-}
-
-.swiper-button-next{
-  background-color: #e5f7ff;
-  right: 20px;
-}
-
-.swiper-button-prev::after, .swiper-button-next::after{
-  color: #1e86b3;
-  font-size: 30px;
-}
 
 /* Пагинация (точки) */
 /* .swiper-pagination{} */
@@ -207,13 +211,10 @@ a:hover img {
 .partner {
   display: flex;
   margin-top: 32px;
-  gap: 30px;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  align-content: stretch;
+  /* gap: 30px; */
+  /* margin-top: 30px; */
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .partner_item {
@@ -315,6 +316,10 @@ a:hover img {
   width: 280px;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
   z-index: 100;
+}
+
+.map {
+  width: 600px;
 }
 
 .solutions_dd {
@@ -427,6 +432,12 @@ span {
   padding: 20px 50px;
   font-size: 14px;
 }
+
+.partners {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .product_info {
@@ -462,7 +473,7 @@ span {
   content: "";
   position: absolute;
   top: 23px;
-  left: 0;
+  left: 5px;
   height: 108px;
   max-height: 100%;
   width: 4px;
@@ -687,6 +698,10 @@ details[open] > summary {
   display: none;
 }
 
+.section_title_title {
+  display: none;
+}
+
 @media (max-width: 1320px) {
 
   details > summary {
@@ -727,6 +742,10 @@ details[open] > summary {
     text-decoration: underline;
   }
 
+  /* .map {
+    width: 350px;
+  } */
+
 
 }
 
@@ -748,6 +767,16 @@ details[open] > summary {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: underline;
+  }
+
+  .section_title_title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 59px;
+    text-align: left;
+    background-image: linear-gradient(90deg, rgb(25, 133, 201), #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 }
@@ -806,13 +835,17 @@ details[open] > summary {
     font-size: 24px;
   }
 
-  .company_info {
+  .company_block {
     display: flex;
     flex-direction: column;
     gap: 0px;
   }
 
   .border-item {
+    display: none;
+  }
+
+  .map {
     display: none;
   }
 
@@ -1073,7 +1106,8 @@ details[open] > summary {
     .wave-divider {
         width: 100%;
         height: 60px;
-        display:block;    
+        display:block; 
+        transform: translateY(1px);   
     }
     .wave-parallax1 {
         animation: wave-move1 10s linear infinite;
@@ -1124,8 +1158,4 @@ details[open] > summary {
     
 
 }/*# sourceMappingURL=style.css.map */
-
-
-
-
 

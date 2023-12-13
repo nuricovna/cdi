@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="img/icon.png">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
 </head>
     
 
@@ -133,10 +134,13 @@
             <section class="company center" id="about">
                 <p class="company_title">Наши ключевые решения - Ваше преимущество</p>
                 <p class="company_about">Строгая ролевая политика позволяет нам оставаться ответственными за качество и прогрессивность наших систем на современном рынке технологий</p>
-                <h2 class="section_title">НЕМНОГО О НАС</h2>
+            </section>   
+                
+            <div class="company_info center">
+            <h2 class="section_title">НЕМНОГО О НАС</h2>
                 <div>
                     <p class="company_text">ООО «СиДиАй» является одной из ведущих компаний Юго-Востока Республики Татарстан, оказывающих услуги по комплексной автоматизации предприятий нефтедобывающей отрасли, предприятий малого и среднего бизнеса. <br>Коллектив, сформировавшийся за годы работы, является важнейшим капиталом компании. Опыт, знания и энергия наших специалистов — вот залог успеха решения поставленных перед нами задач в кратчайшие сроки и с максимальной отдачей для вашего бизнеса.</p>
-                    <div class="company_info">
+                    <div class="company_block">
                         <div class="company_item">
                             <p class="company_name">Безопасность</p>
                             <div class="company_text">
@@ -155,7 +159,8 @@
                     </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            
 
             <p class="section_title_title center">НАШИ РЕШЕНИЯ</p> 
             <section class="solutions_mob">
@@ -166,14 +171,14 @@
                     <p class="catalog_text">КРОН — контроль и разработка объектов нефтедобычи или Комплекс решения для объектов нефтедобычи. Сочетающее в себе преимущества MES- и частично ERP-систем. Как MES-система, ИС «КРОН» позволяет решать оперативные производственные задачи предприятия на уровне цеха (участка), добывающих и сервисных предприятий, а также на уровне управляющей компании.</p>
                     <a target="_blank" href="https://docs.google.com/presentation/d/1zLu5On48hyNcL1J-7t2iRPzdSOgTEPzk/edit?usp=sharing&amp;ouid=106129194773987183113&amp;rtpof=true&amp;sd=true" class="fs-5" rel="noopener noreferrer">Презентация КРОН</a>
                 </div>
-                <img class="cat_logo" src="img/cloud-computing.png" alt="logo">
+                <img class="cat_logo" src="img/Line 21.png" alt="logo">
                 <div class="catalog center">
                     <img src="img/parus.jpg" alt="catalog" class="catalog_img">
                     <p class="catalog_name">КРОН-ТМ</p>
                     <p class="catalog_text">ИС КРОН-ТМ это информационная система «Контроль и Разработка Объектов Нефтедобычи — Телемеханика», разработанная командой программистов ООО «СиДиАй» и предназначенная для работы в реальном времени с целью сбора, обработки, отображения и архивирования информации об объектах мониторинга или управления.</p>
                     <a target="_blank" href="https://docs.google.com/presentation/d/18yuUQAA87LUvLtbSucMOokKp4yQbUFYc/edit?usp=sharing&amp;ouid=106129194773987183113&amp;rtpof=true&amp;sd=true" class="fs-5" rel="noopener noreferrer">Презентация КРОН-ТМ</a>
                 </div>
-                <img class="cat_logo" src="img/identity.png" alt="logo">
+                <img class="cat_logo" src="img/Line 21.png" alt="logo">
                 <div class="catalog center">
                     <img src="img/kron-tm.jpg" alt="catalog" class="catalog_img">
                     <p class="catalog_name">EVISE</p>
@@ -260,7 +265,6 @@
                     </div>
                 </div>
 
-
                 <div class="catalog center">
                     <div class="section_Figure">
                         <img src="img/parus-image.png" alt="">
@@ -325,7 +329,7 @@
     
 
 
-            <div class="solutions" id="solutions center">
+            <div class="solutions" id="solutions">
                 
                 <div class="border-item">
                     <div class="border-head section_title">СОБСТВЕННЫЕ РАЗРАБОТКИ</div>
@@ -392,29 +396,38 @@
                 </div>
                 
                 
-                <section class="partners center">
-                    <p class="section_title">НАШИ ПАРТНЕРЫ</p> 
-                        <div class="partner">
-                            <img class="partner_item" src="img/sheshmaoil.png" alt="шешмаойл" class="icon_client">
-                            <img class="partner_item" src="img/altyn.png" alt=алтын" class="icon_client">
-                            <img class="partner_item" src="img/tattex.png" alt="таттех" class="icon_client">
-                            <img class="partner_item" src="img/tatnefteprom.png" alt="татнефтепром" class="icon_client">
-                        </d>
-                        <div class="partner_big">
-                            <img class="partner_item_big" src="img/karbon.png" alt="карбон" class="icon_client"> 
-                            <img class="partner_item_big" src="img/mellyaneft.png" alt="меллянефть" class="icon_client_1">
-                            <img class="partner_item_big" src="img/mnkt.png" alt=мнкт"" class="icon_client">
-                        </div>
-            </section>
-        </div>
+                    
+                <div class="partners center">
+                    <section>
+                        <p class="section_title">НАШИ ПАРТНЕРЫ</p> 
+                            <div class="partner">
+                                <img class="partner_item" src="img/sheshmaoil.png" alt="шешмаойл" class="icon_client">
+                                <img class="partner_item" src="img/altyn.png" alt=алтын" class="icon_client">
+                                <img class="partner_item" src="img/tattex.png" alt="таттех" class="icon_client">
+                                <img class="partner_item" src="img/tatnefteprom.png" alt="татнефтепром" class="icon_client">
+                                <img class="partner_item_big" src="img/karbon.png" alt="карбон" class="icon_client"> 
+                                <img class="partner_item_big" src="img/mellyaneft.png" alt="меллянефть" class="icon_client_1">
+                                <img class="partner_item_big" src="img/mnkt.png" alt=мнкт"" class="icon_client">
+                            </div>
+                    </section>
+                    <section> 
+                        <!-- <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A38d132512b848428ab7eb8a65b691ebea6a6c39a37648c7347378ca861d4b92b&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe> -->
+                        <div class="map" id="map"></div>
+                        <p class="section_title">НАШ ОФИС</p> 
+                        <p>Мы находимся по адресу: РТ, г. Альметьевск, ул. Ленина, д. 15, <br> офис 409а</p> 
+                    </section>
+                </div>
+
+
+            </div>
 
 
 
 
 
-
-                <div class="border-item">
-                    <div class="border-head section_title">ВНЕДРЕНИЕ И СОПРОВОЖДЕНИЕ</div>
+        <div class="solutions">   
+            <div class="border-item">
+                <div class="border-head section_title">ВНЕДРЕНИЕ И СОПРОВОЖДЕНИЕ</div>
                     
                     <section class="plot1_live center">
                         <div class="sectionText">
@@ -513,7 +526,7 @@
                                 </div>
                             </div>
                     </section>
-                </div>
+                    </div>
                 </div>
             </div>
 
@@ -534,6 +547,8 @@
                 <g class="wave-parallax4"><use xlink:href="#gentle-wave" x="50" y="3" fill="#133e63"/></g>
             </svg>
             </div>
+        </div>
+
 
         <footer class="footer">
             <div class="ftr_menu" id="contacts">
@@ -541,7 +556,7 @@
                         <h2>КОНТАКТЫ</h2>
                         <p><a class="ftr_mail" href="mailto:spv@shoil.tatais.ru">spv@shoil.tatais.ru</a></p> 
                         <p><a class="ftr_mail" href="tel:8 (8553) 39-30-57">тел 8 (8553) 39-30-57</a></p> 
-                        <p>РТ, г. Альметьевск, ул. Ленина, д. 15, офис 409а</p>
+                        <!-- <p>РТ, г. Альметьевск, ул. Ленина, д. 15, офис 409а</p> -->
                         <p class="ftr_icon">© 2023 CDI</p> 
                     </div>
                     <a href="#top"><img  class="ftr_icon_top" src="img/trel.png" width="75" height="75"></a>   

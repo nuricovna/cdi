@@ -49,6 +49,9 @@ function clearActiveClasses() {
 }
 
 
+
+
+
 ymaps.ready(init);
 
 function init() {

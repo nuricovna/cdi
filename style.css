@@ -184,8 +184,9 @@ ul {
 
 .arrow_up {
   box-shadow: #337AB7;
-  border-color: #0045ff;
-
+  border-color: #000000;
+  border: 3px solid;
+  border-radius: 50%;
 }
 
 a:hover img {

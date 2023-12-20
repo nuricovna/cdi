@@ -34,18 +34,12 @@ ul {
   align-items: center;
 }
 
-
-.nav a {
-  font-size: 20px;
-  line-height: 20px;
-  text-decoration: none;
-  width: 66px;
-  font-style: normal;
-  font-weight: 400;
-  color: #e21e1e;
-  order: 0;
-  flex-grow: 0;
-  height: 20px;
+.hat-wrapper {
+  background-color: #03234a;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header__btn {
@@ -92,18 +86,6 @@ ul {
   font-family: "Montserrat", sans-serif;
 }
 
-.company_1 {
-  text-align: center;
-}
-
-
-.hat-wrapper {
-  background-color: #03234a;
-  height: 600px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .hat-fon {
   display: flex;
@@ -127,6 +109,7 @@ ul {
   text-align: left;
   padding-top: 40px;
   color: #000;
+  padding-bottom: 20px;
   /* background-image: linear-gradient(48deg, #000000, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
@@ -138,29 +121,9 @@ ul {
   line-height: 59px;
   text-align: left;
   color: #fff;
+  padding-bottom: 20px;
 }
 
-.product_img {
-  width: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-}
-
-.product_img_hat {
-  object-fit: cover;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-}
-
-.product-info {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 
 .product-text {
   font-size: 16px;
@@ -174,26 +137,12 @@ ul {
   font-weight: 500;
 }
 
-
-.main_img {
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  width: 379px;
-  height: 300px;
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-direction: row;
-}
-
-
 .footer {
   background: #03234A;
   color: #fff;
   line-height: 30px;
   font-size: 20px;
-  height: 550px;
+  height: 750px;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
@@ -204,7 +153,7 @@ ul {
 .ftr_menu {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   width: 100%;
   max-width: 1236px;
@@ -217,6 +166,9 @@ ul {
 
 .ftr_contacts {
   flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .ftr_map {
@@ -225,6 +177,15 @@ ul {
 
 .ftr_icon_top {
   flex-basis: 20%;
+  position: fixed;
+  bottom: 50px;
+  right: 15%;
+}
+
+.arrow_up {
+  box-shadow: #337AB7;
+  border-color: #0045ff;
+
 }
 
 a:hover img {
@@ -237,7 +198,6 @@ a:hover img {
 
 .company_info {
   display: flex;
-  gap: 32px;
   flex-direction: column;
 }
 
@@ -268,8 +228,9 @@ a:hover img {
   margin: 0 auto;
 }
 
-.swiper-wrapper {
+.swiper.swiper-autoheight .swiper-wrapper {
   box-sizing: content-box;
+  align-items: stretch;
 }
 
 .swiper-slide{

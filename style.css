@@ -109,10 +109,9 @@ ul {
   text-align: left;
   padding-top: 40px;
   color: #000;
-  padding-bottom: 20px;
-  /* background-image: linear-gradient(48deg, #000000, #ffffff);
+  background-image: linear-gradient(48deg, #000000, #ffffff);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent; 
 }
 
 .section_title_1 {
@@ -128,7 +127,6 @@ ul {
 .product-text {
   font-size: 16px;
   margin-bottom: 10px;
-  font-weight: 500;
 }
 
 .company_text {
@@ -142,12 +140,12 @@ ul {
   color: #fff;
   line-height: 30px;
   font-size: 20px;
-  height: 750px;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-end;
+  padding: 20px 0;
 }
 
 .ftr_menu {
@@ -179,14 +177,15 @@ ul {
   flex-basis: 20%;
   position: fixed;
   bottom: 50px;
-  right: 15%;
+  right: 5%;
 }
 
 .arrow_up {
   box-shadow: #337AB7;
-  border-color: #000000;
   border: 3px solid;
   border-radius: 50%;
+  text-decoration: none;
+  border-color: lightslategrey;
 }
 
 a:hover img {
@@ -232,6 +231,7 @@ a:hover img {
 .swiper.swiper-autoheight .swiper-wrapper {
   box-sizing: content-box;
   align-items: stretch;
+  min-height: 300px;
 }
 
 .swiper-slide{
@@ -260,8 +260,6 @@ a:hover img {
   font-size: 30px;
 }
 
-/* Пагинация (точки) */
-/* .swiper-pagination{} */
 
 .swiper-pagination-bullet{
   background-color: #red;
@@ -276,18 +274,6 @@ a:hover img {
   background-color: #0f0801;
 }
 
-
-/* .partner {
-  display: flex;
-  margin-top: 32px;
-  gap: 30px;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  align-content: stretch;
-  align-items: center;
-} */
 
 .partner_item {
   width: 180px;
@@ -304,18 +290,6 @@ a:hover img {
   border: 0;
   display: block;
 }
-
-
-/* .partner_big {
-  display: flex;
-  gap: 70px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  padding-bottom: 30px;
-} */
-
 
 .company_name {
   font-weight: 500;
@@ -552,8 +526,6 @@ a:hover img {
 .evise-text {
   position: relative;
   padding-left: 24px;
-  margin-bottom: 20px;
-  font-size: 16px;
 }
 
 .evise-text:before {
@@ -587,6 +559,7 @@ a:hover img {
   text-align: left;
   font-size: 16px;
   padding-top: 50px;
+  flex-basis: 100%;
 }
 
 .sectionText_1 {
@@ -632,7 +605,9 @@ a:hover img {
 .plot-live {
   display: flex;
   position: relative;
-  gap: 180px;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .section_Text {
@@ -678,94 +653,8 @@ a:hover img {
   height: 20px;
 }
 
-details {
-  background-color: #ffffff;
-}
-
-summary {
-  width: 472px;
-  cursor: pointer; /* Меняем вид указателя */
-  background-color: #337AB7;
-  color: rgb(255, 255, 255); /* Белый цвет текста */
-  padding: 0.5em 1em; /* Расстояние от текста до края */
-  border-radius: 10px 10px 10px 10px;
-  text-align: center;
-  padding: 20px;
-  margin: 5px;
-}
-
-summary[open] {
-  background-color: #337AB7;
-}
-
-details[open] summary {
-  background-color: #fff;
-  color: blue;
-}
-
-summary::marker {
-  content: "➕ "; /* Исходный символ 🔹 */
-}
-
-details[open] summary::marker {
-  content: "➖ "; /* Символ после открытия 🔷*/
-} 
-
-details div {
-  padding: 1em; /* Расстояние от текста до края */
-}
-
-details > summary {
-  padding: 2px 6px;
-  width: 472px;
-  background-color: #337AB7;
-  border: none;
-  box-shadow: 3px 3px 4px rgba(17, 17, 17, 0.418);
-  cursor: pointer;
-}
-
-details > p {
-  border-radius: 10px 10px 10px 10px;
-  background-color: #d4cbcb;
-  padding: 15px 6px;
-  margin: 15px;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.062);
-}
-
-details > ul > li {
-  border-radius: 10px 10px 10px 10px;
-  background-color: #ffffff;
-  padding: 15px 6px;
-  margin: 15px;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.062);
-}
-
-details[open] > summary {
-  background-color: rgb(91, 91, 95), 0.253;
-}
 
 
- /** MAP **/
-
-/* .map {
-  width: calc(100% + 42px);
-  height: 472px;
-  /* pointer-events: none; */
-} */
-
-[class*="copyrights-pane"] {
-  display: none !important;
-}
-
-[class*="ground-pane"] {
-  /* filter: grayscale(1); */
-}
-
-.map-container {
-  width: 100%;
-  max-width: 1236px;
-  margin: 0 auto;
-}
 
 .hat_mob {
   display: none;
@@ -780,12 +669,10 @@ details[open] > summary {
 }
 
 .prod_link {
-  padding-left: 50px;
-  width: 379px;
-  height: 300px;
+  width: 394px;
+  height: 441px;
   display: flex;
-  align-items: flex-end;
-  padding: 181px;
+  position: relative;
   font-weight: 600;
   font-size: 80px;
   line-height: 32px;
@@ -795,25 +682,57 @@ details[open] > summary {
   flex-direction: row;
 }
 
+p.prod_link.prod_link-2::after {
+  line-height: 1;
+  content: "КРОН-ТМ";
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-45%);
+  padding-bottom: -50%;
+}
+
+p.prod_link.prod_link-3::after {
+  line-height: 1;
+  content: "EVISE";
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-45%);
+  padding-bottom: -50%;
+}
+
+p.prod_link.prod_link-1::after {
+  line-height: 1;
+  content: "КРОН";
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-45%);
+  padding-bottom: -50%;
+}
+
 .prod_link-1 {
   background-image: url(img/parus.jpg);
   padding-left: 80px;
   border-radius: 20px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
 }
 
 .prod_link-2 {
   background-image: url(img/innopolis.jpg);
-  padding-left: 80px;
   border-radius: 20px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
 }
 
 .prod_link-3 {
   background-image: url(img/evise.jpg);
-  padding-left: 80px;
   border-radius: 20px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  padding-left: 80px;
 }
 
 .colored {
@@ -835,8 +754,8 @@ details[open] > summary {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
-  gap: 50px;
+  gap: 40px;
+  padding-top: 20px;
 }
 
 .automation_l {
@@ -945,17 +864,25 @@ ul.list_custom_w li:after {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   width: calc((100% - 58px) / 4);
 }
 
 .entrust_installation_title {
-  margin-top: 24px;
+  margin-top: 20px;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 20px;
   text-align: center;
+}
+
+.mob_map {
+  display: none;
+}
+
+.mob_map_2 {
+  display: none;
 }
 
 
@@ -971,6 +898,10 @@ ul.list_custom_w li:after {
     cursor: pointer;
   }
 
+  .mob_map_2 {
+    display: none;
+  }
+
 
 }
 
@@ -981,15 +912,6 @@ ul.list_custom_w li:after {
       padding-right: calc(50% - 393px);
   }
 
-  details > summary {
-    padding: 2px 6px;
-    width: 280px;
-    background-color: #337AB7;
-    border: none;
-    box-shadow: 3px 3px 4px rgba(17, 17, 17, 0.418);
-    cursor: pointer;
-  }
-
   .section_title_mob {
     font-weight: 500;
     font-size: 16px;
@@ -998,6 +920,23 @@ ul.list_custom_w li:after {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: underline;
+  }
+
+  .hat_ul {
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .sectionText_1 {
+    background-position: 100% 50%;
+  }
+
+  .dropdown_menu {
+    font-size: 16px;
+  }
+
+  .mob_map_2 {
+    display: none;
   }
 
 
@@ -1023,6 +962,23 @@ ul.list_custom_w li:after {
     text-decoration: underline;
   }
 
+  .mob_map {
+    display: flex;
+  }
+
+  .ftr_map {
+    display: none;
+  }
+
+  .ftr_menu {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .mob_map_2 {
+    display: none;
+  }
+
 }
 
 
@@ -1034,6 +990,11 @@ ul.list_custom_w li:after {
   .header {
     padding-top: 32px;
   }
+
+  .about_text{
+    padding: 0;
+  }
+
   .header_input {
     display: none;
   }
@@ -1085,11 +1046,6 @@ ul.list_custom_w li:after {
     gap: 0px;
   }
 
-  .footer {
-    font-size: 16px;
-    padding-bottom: 0%;
-    padding-left: 20px;
-  }
 
   .partner_big {
     gap: 0px;
@@ -1167,7 +1123,7 @@ ul.list_custom_w li:after {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: center
   }
 
   .cart_box_name {
@@ -1239,48 +1195,6 @@ ul.list_custom_w li:after {
   margin-bottom: 12px;
   }
   
-  summary[open] {
-    background-color: rgb(2, 33, 77);
-  }
-  
-  details[open] summary {
-    background-color: #fff;
-    color:  rgb(2, 33, 77);
-  }
-  
-  
-  details div {
-    padding: 1em; /* Расстояние от текста до края */
-  }
-  
-  details > summary {
-    padding: 2px 6px;
-    width: 250px;
-    background-color: #337AB7;
-    border: none;
-    box-shadow: 3px 3px 4px rgba(17, 17, 17, 0.418);
-    cursor: pointer;
-  }
-  
-  details > p {
-    border-radius: 10px 10px 10px 10px;
-    background-color: #d4cbcb;
-    padding: 15px 6px;
-    margin: 15px;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.062);
-  }
-  
-  details > ul > li {
-    border-radius: 10px 10px 10px 10px;
-    background-color: #ffffff;
-    padding: 15px 6px;
-    margin: 15px;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.062);
-  }
-  
-  details[open] > summary {
-    background-color: rgb(91, 91, 95), 0.253;
-  }
   
   .evise-text {
     font-weight: 400;
@@ -1290,9 +1204,19 @@ ul.list_custom_w li:after {
     margin-bottom: 12px;
   }
 
-  .podrobnee {
-    padding-left: 50px;
+  .mob_map {
+    display: none;
   }
+
+  .mob_map_2 {
+    display: flex;
+    padding: 20px;
+  }
+
+  .solutions {
+    display: none;
+  }
+
 
   .partners {
     display: none;
@@ -1342,7 +1266,7 @@ ul.list_custom_w li:after {
   }
 
   
-
+    /** волна **/
     .wave-divider {
         width: 100%;
         height: 60px;

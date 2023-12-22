@@ -467,7 +467,7 @@ a:hover img {
   height: 100%;
 }
 
-.slide a {
+.slide p {
   position: absolute;
   font-size: 50px;
   bottom: 20px;
@@ -483,7 +483,7 @@ a:hover img {
   flex: 12;
 }
 
-.slide.active a {
+.slide.active p {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }

@@ -466,7 +466,7 @@ a:hover img {
   height: 100%;
 }
 
-.slide p {
+.slide h3 {
   position: absolute;
   font-size: 50px;
   bottom: 20px;
@@ -476,18 +476,44 @@ a:hover img {
   font-weight: 600;
   text-decoration: none;
   color: #000;
+  text-align: center;
 } 
+
+.slide p {
+  position: absolute;
+  font-size: 16px;
+  bottom: 20px;
+  right: 20px;
+  margin: 0;
+  opacity: 0;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  border: 2px solid #9da3e6;
+  background-color: #9da3e6;
+}
+
+.slide.active p  {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
 
 .slide.active {
   flex: 12;
 }
 
-.slide.active p {
+.slide.active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
 
-@keyframes bounceIn {
+.wow {
+  height: 700px;
+}
+
+/* @keyframes bounceIn {
    0%{
     transform: scale(1)  translateX(0);
   }
@@ -501,11 +527,11 @@ a:hover img {
   } 
 
    /* from{opacity: 0} to {opacity: 1;}  */
-}  
+}   */
 
-.bounceIn {
+/* .bounceIn {
   animation: bounceIn 20s ease-in-out infinite;
-}
+} */
 
 .about_text {
   display: inline-block;
@@ -726,7 +752,8 @@ p.prod_link.prod_link-1::after {
 }
 
 .prod_link-1 {
-  background-image: url(img/parus.jpg);
+  /* background-image: url(img/parus.jpg); */
+  background-color: #111;
   padding-left: 80px;
   border-radius: 20px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
@@ -734,14 +761,16 @@ p.prod_link.prod_link-1::after {
 }
 
 .prod_link-2 {
-  background-image: url(img/innopolis.jpg);
+  /* background-image: url(img/innopolis.jpg); */
+  background-color: #111;
   border-radius: 20px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
 }
 
 .prod_link-3 {
-  background-image: url(img/evise.jpg);
+  /* background-image: url(img/evise.jpg); */
+  background-color: #111;
   border-radius: 20px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
@@ -956,7 +985,7 @@ ul.list_custom_w li:after {
       width: 345px;
   }
 
-  .section_title_mob {
+  .section_title {
     font-weight: 500;
     font-size: 16px;
     text-align: left;
@@ -1008,7 +1037,7 @@ ul.list_custom_w li:after {
   .hat_mob {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
     padding-top: 20px;
   }
   .header {
@@ -1043,6 +1072,29 @@ ul.list_custom_w li:after {
     color: #fff;
     font-size: 24px;
   }
+
+  .company_title_1 {
+    font-weight: 500;
+    font-size: 28px;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(90deg, rgb(25, 133, 201), #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .company_about_1 {
+    font-size: 16px;
+    color: #010c19;
+    text-align: center;
+  }
+
+  .company_item {
+    padding-top: 0px;
+  }
+
+
 
   .company_info {
     display: flex;
@@ -1106,15 +1158,6 @@ ul.list_custom_w li:after {
     line-height: 29px;
   }
 
-  .section_title_title {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 59px;
-    text-align: left;
-    background-image: linear-gradient(90deg, rgb(25, 133, 201), #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 
   
   .footer {
@@ -1200,7 +1243,7 @@ ul.list_custom_w li:after {
   font-size: 14px;
   line-height: 17px;
   color: #010c19;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   }
   
   
@@ -1209,7 +1252,12 @@ ul.list_custom_w li:after {
     font-size: 14px;
     line-height: 17px;
     color: #010c19;
-    margin-bottom: 12px;
+  }
+
+  .company_name {
+    font-weight: 500;
+    font-size: 21px;
+    color: #000000;
   }
 
   .mob_map {
@@ -1257,15 +1305,6 @@ ul.list_custom_w li:after {
   margin-right: auto;
   }
 
-  .section_title_mob {
-    font-weight: 500;
-    font-size: 16px;
-    text-align: right;
-    background-image: linear-gradient(90deg, rgb(25, 133, 201), #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: underline;
-  }
 
   .cat_logo_foot {
     margin-left: auto;
@@ -1336,6 +1375,12 @@ ul.list_custom_w li:after {
       flex-direction: column;
       gap: 0px; 
       font-size: 15px;
+  }
+
+  .ftr_menu {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
   }
 
     

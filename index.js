@@ -1,35 +1,37 @@
+/* swiper */
+
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     loop: true,
 
     autoHeight: true,
 
-    
-
-
-
-    // slidesPerView: 2,
-  
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
       dynamicBullets: true,
     },
-  
-    // Navigation arrows
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
+
 });
 
-/* swiper */
+/* swiper_2 */
+
+// const swiper = new Swiper('.js-hero-swiper', {
+//   allowTouchMove: false,
+//   loop: true,
+//   effect: 'fade',
+//   speed: 10000,
+//   autoplay: {
+//     delay: 10000
+//   }
+// });
+
+
+/* slider */
 
 const slides = document.querySelectorAll('.slide')
 
@@ -49,7 +51,7 @@ function clearActiveClasses() {
 }
 
 
-
+/*  map  */
 
 
 ymaps.ready(init);
@@ -79,4 +81,18 @@ function init() {
 
   myMap.geoObjects.add(myPlacemark);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

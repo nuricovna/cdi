@@ -448,6 +448,7 @@ a:hover img {
   transition: all 500ms ease-in-out;
   overflow: hidden;
   border: 5px solid #ffffff;
+  }
 }
 
 
@@ -1382,6 +1383,10 @@ ul.list_custom_w li:after {
     flex-direction: column;
     padding: 20px;
   }
+
+  .ftr_icon_top {
+    right: 15%;
+}
 
     
 

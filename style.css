@@ -79,10 +79,7 @@ ul {
 .company_about_1 {
   margin-top: 50px;
   font-size: 24px;
-  font-weight: normal;
-  line-height: normal;
   color: #010c19;
-  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -304,6 +301,7 @@ a:hover img {
   max-width: 640px;
   padding: 20px 50px;
   font-size: 24px;
+
 }
 
 .hat_ul {
@@ -449,14 +447,13 @@ a:hover img {
   position: relative;
   transition: all 500ms ease-in-out;
   overflow: hidden;
-  /* border: 5px solid #ffffff;  */
   border: 5px solid #000; 
+  line-height: 0.90;
 }
 
 
 .slide h3 {
   position: absolute;
-  font-size: 44px;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50px);
@@ -484,6 +481,9 @@ a:hover img {
 .slide h3 span {
   display: block;
   transform: rotate(270deg);
+  color: #000000;
+  font-size: 34px;
+  border-radius: 20px;
 }
 
 .slide.active h3 span {
@@ -494,7 +494,8 @@ a:hover img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(127 167 193);
+  /* background: rgb(127 167 193); */
+  background-color: lightslategrey;;
   opacity: 1;
   transition: opacity 0.3s ease;
   top: 0;
@@ -524,66 +525,14 @@ a:hover img {
   
 }
 
-
-/* .slide img {
-  width: 100%;
-  height: auto;
-  transition: transform 3s;
-}
-
-.slide:hover img {
-  transform: scale(1.2);
-}
-
-.slide .slide__img {
-  object-fit: cover;
-  height: 100%;
-}
-
-.slide h3 {
-  position: absolute;
-  font-size: 50px;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
-  font-weight: 600;
-  text-decoration: none;
-  color: #000;
-  text-align: center;
-} 
-
-.slide p {
-  position: absolute;
-  font-size: 16px;
-  bottom: 20px;
-  right: 20px;
-  margin: 0;
-  opacity: 0;
-  font-weight: 600;
-  text-decoration: none;
-  color: #000;
-  text-align: center;
-  border: 2px solid #9da3e6;
-  background-color: #9da3e6;
-}
-
-.slide.active p  {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+.pooh {
+  padding: 15px;
 }
 
 
-.slide.active {
-  flex: 12;
+.evise_a {
+  padding-left: 500px;
 }
-
-.slide.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
-} */
-
-
 
 .about_text {
   display: inline-block;
@@ -738,10 +687,16 @@ a:hover img {
   width: 66px;
   font-style: normal;
   font-weight: 400;
-  color: #337AB7;
+  color: #1064ac;
   order: 0;
   flex-grow: 0;
   height: 20px;
+}
+
+.product-text_1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: aliceblue;
 }
 
 
@@ -761,11 +716,11 @@ a:hover img {
 
 .prod_link {
   width: 394px;
-  height: 360px;
+  height: 285px;
   display: flex;
   position: relative;
   font-weight: 600;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 32px;
   color: #ffffff;
   background-size: cover;
@@ -782,6 +737,7 @@ p.prod_link.prod_link-2::after {
   top: 50%;
   transform: translateY(-45%);
   padding-bottom: -50%;
+  padding-left: 22px;
 }
 
 p.prod_link.prod_link-3::after {
@@ -828,6 +784,7 @@ p.prod_link.prod_link-1::after {
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
   padding-left: 80px;
+  margin-bottom: 88px;
 }
 
 .colored {
@@ -925,19 +882,6 @@ ul.list_custom_w li:after {
   margin-bottom: 10px;
   font-size: 18px;
 }
-
-/* 
-.plot1_live:before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-image: linear-gradient(357deg, rgb(22 46 67) 30%, rgb(152, 184, 219) 200%);
-} */
 
 .title_1c {
   font-size: 24px;

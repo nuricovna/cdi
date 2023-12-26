@@ -80,6 +80,7 @@ ul {
   margin-top: 50px;
   font-size: 24px;
   color: #010c19;
+  font-weight: 500;
 }
 
 
@@ -448,11 +449,11 @@ a:hover img {
   transition: all 500ms ease-in-out;
   overflow: hidden;
   border: 5px solid #000; 
-  line-height: 0.90;
+  line-height: 0.8;
 }
 
 
-.slide h3 {
+.slide h5 {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -473,12 +474,12 @@ a:hover img {
   flex: 10;
 }
 
-.slide.active h3 {
+.slide.active h5 {
   display: block;
   color: #020f24;
 }
 
-.slide h3 span {
+.slide h5 span {
   display: block;
   transform: rotate(270deg);
   color: #000000;
@@ -486,7 +487,7 @@ a:hover img {
   border-radius: 20px;
 }
 
-.slide.active h3 span {
+.slide.active h5 span {
   display: inline;
 }
 
@@ -521,8 +522,6 @@ a:hover img {
   background-position: center;
   background-repeat: no-repeat;
   transition: transform 1s ease;
-  transform: scale(1.2);
-  
 }
 
 .pooh {

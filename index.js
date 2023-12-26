@@ -48,8 +48,8 @@ function clearActiveClasses() {
   }
 }
 
-[...document.querySelectorAll("h3")].forEach((h3) => {
-  h3.innerHTML = h3.textContent
+[...document.querySelectorAll("h5")].forEach((h5) => {
+  h5.innerHTML = h5.textContent
     .split("")
     .map((l) => `<span>${l}</span>`)
     .join("");

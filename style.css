@@ -466,6 +466,7 @@ a:hover img {
   font-weight: 900;
   color: black;
   text-align: center;
+  /* transform: rotate(89deg); */
 }
 
 .slide.active {
@@ -481,6 +482,7 @@ a:hover img {
 
 .slide h3 span {
   display: block;
+  transform: rotate(270deg);
 }
 
 .slide.active h3 span {
@@ -776,7 +778,7 @@ a:hover img {
 
 .prod_link {
   width: 394px;
-  height: 441px;
+  height: 360px;
   display: flex;
   position: relative;
   font-weight: 600;

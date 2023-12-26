@@ -530,8 +530,8 @@ a:hover img {
 }
 
 
-.evise_a {
-  padding-left: 500px;
+.nado {
+  display: flex;
 }
 
 .about_text {

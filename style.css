@@ -769,6 +769,7 @@ a:hover img {
   background-size: cover;
   background-repeat: no-repeat;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 p.prod_link.prod_link-2::after {
@@ -851,9 +852,10 @@ p.prod_link.prod_link-1::after {
 }
 
 .automation_l {
-  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  padding: 25px; */
+  padding: 25px; 
+  background-color: #03234a8a;
   /* width: calc(40% - 20px); */
 }
 

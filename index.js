@@ -38,7 +38,8 @@ const slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
 let timer;
 
-timer = setInterval(() => changeSlide(slides[0]), 2000);
+
+timer = setInterval(() => changeSlide(slides[0]), 2500);
 
 for (const slide of slides) {
   slide.addEventListener("click", () => {
@@ -49,7 +50,7 @@ for (const slide of slides) {
     innerSlides.forEach((slide) => (slide.style.transform = "translateX(0%)"));
     currentSlide = 0;
     if (timer) clearInterval(timer);
-    timer = setInterval(() => changeSlide(slide), 2000);
+    timer = setInterval(() => changeSlide(slide), 2500);
   });
 }
 

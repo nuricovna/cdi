@@ -427,11 +427,6 @@ a:hover img {
 
 
 
-
-
-
-
-
 .slide_container {
   max-width: 1236px;
   width: 100%;
@@ -454,8 +449,8 @@ a:hover img {
   position: relative;
   transition: all 500ms ease-in-out;
   overflow: hidden;
-  /* border: 5px solid #ffffff; */
-  border: 5px solid #000;
+  border: 5px solid #ffffff; 
+  /* border: 5px solid #000; */
 }
 
 

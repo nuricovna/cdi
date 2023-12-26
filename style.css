@@ -465,8 +465,10 @@ a:hover img {
   margin: 0;
   font-weight: 900;
   color: black;
+  display: flex;
+  flex-direction: column-reverse;
   text-align: center;
-  /* transform: rotate(89deg); */
+  align-items: center;
 }
 
 .slide.active {
@@ -474,10 +476,9 @@ a:hover img {
 }
 
 .slide.active h3 {
-  left: 20px;
-  transform: none;
+  left: 120px;
+  display: block;
   color: #020f24;
-  text-align: center;
 }
 
 .slide h3 span {

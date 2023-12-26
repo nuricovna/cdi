@@ -459,7 +459,7 @@ a:hover img {
   font-size: 44px;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50px);
   z-index: 1;
   text-transform: uppercase;
   margin: 0;
@@ -469,6 +469,7 @@ a:hover img {
   flex-direction: column-reverse;
   text-align: center;
   align-items: center;
+  left: 75px;
 }
 
 .slide.active {
@@ -476,7 +477,6 @@ a:hover img {
 }
 
 .slide.active h3 {
-  left: 120px;
   display: block;
   color: #020f24;
 }

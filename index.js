@@ -33,22 +33,48 @@ const swiper = new Swiper('.swiper', {
 
 /* slider */
 
-const slides = document.querySelectorAll('.slide')
+const slides = document.querySelectorAll(".slide");
+
+let currentSlide = 0;
+let timer;
+
+timer = setInterval(() => changeSlide(slides[0]), 2000);
 
 for (const slide of slides) {
-    slide.addEventListener('click', () => {
-        clearActiveClasses()
+  slide.addEventListener("click", () => {
+    clearActiveClasses();
+    slide.classList.add("active");
 
-    slide.classList.add('active')
-    })
+    const innerSlides = slide.querySelectorAll(".inner-slide");
+    innerSlides.forEach((slide) => (slide.style.transform = "translateX(0%)"));
+    currentSlide = 0;
+    if (timer) clearInterval(timer);
+    timer = setInterval(() => changeSlide(slide), 2000);
+  });
 }
 
 function clearActiveClasses() {
-    slides.forEach((slide) => {
-        slide.classList.remove('active')
-    })
-    
+  for (const slide of slides) {
+    slide.classList.remove("active");
+  }
 }
+
+[...document.querySelectorAll("h3")].forEach((h3) => {
+  h3.innerHTML = h3.textContent
+    .split("")
+    .map((l) => `<span>${l}</span>`)
+    .join("");
+});
+
+function changeSlide(slide) {
+  const innerSlides = slide.querySelectorAll(".inner-slide");
+  currentSlide++;
+  if (currentSlide === innerSlides.length) currentSlide = 0;
+  innerSlides.forEach(
+    (slide) => (slide.style.transform = `translateX(-${100 * currentSlide}%)`)
+  );
+}
+
 
 
 /*  map  */

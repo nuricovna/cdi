@@ -460,7 +460,7 @@ a:hover img {
 
 .slide h3 {
   position: absolute;
-  font-size: 24px;
+  font-size: 44px;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -469,6 +469,7 @@ a:hover img {
   margin: 0;
   font-weight: 900;
   color: black;
+  text-align: center;
 }
 
 .slide.active {
@@ -478,7 +479,8 @@ a:hover img {
 .slide.active h3 {
   left: 20px;
   transform: none;
-  color: white;
+  color: #020f24;
+  text-align: center;
 }
 
 .slide h3 span {

@@ -760,7 +760,7 @@ ul.list_custom_w li {
 
 ul.list_custom_w li:after {
   content: "";
-  background-image: url(img/file-icons_1c-alt.png);
+  background-image: url(img/1c_ul.png);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: contain;

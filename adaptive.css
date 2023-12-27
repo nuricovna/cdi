@@ -49,6 +49,10 @@
             display: flex;
             flex-direction: column-reverse;
         }
+
+        .slide h5 {
+            left: 55px;
+          }
     
     }
     
@@ -287,9 +291,6 @@
             display: none;
         }
 
-        /* .prod_link-2 {
-        padding-left: 49px;
-        } */
 
         .prod_link-3 {
         padding-left: 49px;
@@ -318,11 +319,6 @@
         display: flex;
         flex-direction: column;
         }
-/*     
-        .solutions {
-        display: none;
-        } */
-
 
         .prod {
             display: flex;
@@ -484,5 +480,8 @@
             flex-direction: column-reverse;
         }
         
+        .prod_link.prod_link-3 {
+            margin-bottom: 0;
+        }
     
     }

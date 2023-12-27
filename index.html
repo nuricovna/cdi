@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="img/icon.png">
 </head>
@@ -88,8 +89,8 @@
         <div class="mob_fon"></div>
 
         <div class="content">
-            <div class="hat-wrapper">
-                <div class="hat-fon">
+            <div class="content_wrapper">
+                <div class="content_main">
                         <div class="slide_container">
                             <div class="slide active">
                                 <div class="inner-slider">
@@ -200,9 +201,9 @@
                 </div>
             </div>
 
-            <div class="company_1 center" id="about">
-                <h1 class="company_title_1">Наши ключевые решения - Ваше преимущество</h1>
-                <h2 class="company_about_1">Строгая ролевая политика позволяет нам оставаться ответственными за качество и прогрессивность наших систем на современном рынке технологий</h2>
+            <div class="company_main center" id="about">
+                <h1 class="company_title_main">Наши ключевые решения - Ваше преимущество</h1>
+                <h2 class="company_about_main">Строгая ролевая политика позволяет нам оставаться ответственными за качество и прогрессивность наших систем на современном рынке технологий</h2>
             </div>  
                 
             <div class="company_info center">
@@ -230,10 +231,7 @@
                     </div>
             </div>
 
-            <div class="center">
-                <p class="section_title_title">НАШИ РЕШЕНИЯ</p>
-            </div> 
-            <section class="solutions_mob">
+            <!-- <section class="solutions_mob">
                 <p class="section_title center">СОБСТВЕННЫЕ РАЗРАБОТКИ</p>
                 <div class="catalog center">
                     <img src="img/evise.jpg" alt="catalog" class="catalog_img">
@@ -303,10 +301,6 @@
                     </div>
 
 
-                    <p class="section_title center">НАШ ОФИС</p>    
-                    <div class="mob_map_2 center" >
-                        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A38d132512b848428ab7eb8a65b691ebea6a6c39a37648c7347378ca861d4b92b&amp;source=constructor" width="350" height="450" frameborder="0"></iframe>
-                    </div>   
 
 
                 <p class="section_title center">ВНЕДРЕНИЕ И СОПРОВОЖДЕНИЕ</p>
@@ -402,7 +396,7 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-            </section>
+            </section>  -->
 
 
             <div class="solutions" id="solutions">
@@ -415,7 +409,7 @@
                     </p>
                 </div> 
                     
-                <div class="prod center automation_l-1" id="kron_tm">
+                <div class="prod_kt center automation_l-1" id="kron_tm">
                     <p class="product-text_1">ИС КРОН-ТМ - это информационная система «Контроль и Разработка Объектов Нефтедобычи — Телемеханика», разработанная командой программистов ООО «СиДиАй» и предназначенная для работы в реальном времени с целью сбора, обработки, отображения и архивирования информации об объектах мониторинга или управления. <br></p>
                     <p><a target="_blank" href="https://docs.google.com/presentation/d/18yuUQAA87LUvLtbSucMOokKp4yQbUFYc/edit?usp=sharing&amp;ouid=106129194773987183113&amp;rtpof=true&amp;sd=true" class="fs-5" rel="noopener noreferrer">Презентация</a></p>
                     <p class="prod_link prod_link-2" href="#"></p>
@@ -474,7 +468,12 @@
                 </div>
             </div> 
             
-                
+            <div class="mob_map">
+            <p class="section_title center">НАШ ОФИС</p>    
+            <div class="mob_map_display" >
+                <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A38d132512b848428ab7eb8a65b691ebea6a6c39a37648c7347378ca861d4b92b&amp;source=constructor" width="300" height="450" frameborder="0"></iframe>
+            </div>
+            </div>       
             
             <section class="partners center">
                 <p class="section_title">НАШИ ПАРТНЕРЫ</p> 
@@ -673,10 +672,7 @@
         <footer class="footer">
             <div class="ftr_menu" id="contacts">
                 <div class="ftr_map" >
-                    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A38d132512b848428ab7eb8a65b691ebea6a6c39a37648c7347378ca861d4b92b&amp;source=constructor" width="700" height="400" frameborder="0"></iframe>
-                </div>
-                <div class="mob_map" >
-                    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A38d132512b848428ab7eb8a65b691ebea6a6c39a37648c7347378ca861d4b92b&amp;source=constructor" width="350" height="350" frameborder="0"></iframe>
+                    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A38d132512b848428ab7eb8a65b691ebea6a6c39a37648c7347378ca861d4b92b&amp;source=constructor" width="550" height="400" frameborder="0"></iframe>
                 </div>
                 <div class="ftr_contacts">
                     <h2>КОНТАКТЫ</h2>

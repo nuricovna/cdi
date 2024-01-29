@@ -658,8 +658,8 @@ p.prod_link.prod_link-1::after {
 }
 
 .prod_link-1 {
-  /* background-image: url(img/parus.jpg); */
-  background-color: #111;
+  background-image: url(img/logo_kron.png); 
+  /* background-color: #111; */
   padding-left: 80px;
   border-radius: 20px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
@@ -667,8 +667,8 @@ p.prod_link.prod_link-1::after {
 }
 
 .prod_link-2 {
-  /* background-image: url(img/innopolis.jpg); */
-  background-color: #111;
+  background-image: url(img/logo_kron-tm.png); 
+  /* background-color: #111; */
   border-radius: 20px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
   flex-shrink: 0;
@@ -676,7 +676,7 @@ p.prod_link.prod_link-1::after {
 
 .prod_link-3 {
   /* background-image: url(img/evise.jpg); */
-  background-color: #111;
+  background-color: #03234A;
   border-radius: 20px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
   flex-shrink: 0;

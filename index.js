@@ -26,7 +26,6 @@ const slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
 let timer;
 
-
 timer = setInterval(() => changeSlide(slides[0]), 2500);
 
 for (const slide of slides) {
